@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .scroll-bg{
+           background: aliceblue; 
+           width: 400px;
+           height: auto;
+        }
+        .scroll-div{
+            width: 400px;
+            background: aliceblue;
+            height: 690px;
+            overflow: hidden;
+            overflow-y: scroll;
+            
+        }
+        .scroll-object>p{
+            color: black;
+
+        }
+        label{
+            display: block;
+        }
+        .content{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="scroll-bg">
+        <div class="scroll-div">
+            <div class="scroll-object">
+                <form action="" method="post">
+                    <div class="content">
+
+                        <label >Sort</label>
+                        <label for=""><input type="radio" name="radio">Newest</label>
+                        <label for=""><input type="radio" name="radio">Price:High-Low</label>
+                        <label for=""><input type="radio" name="radio">Price:Low-High
+                        </label>
+                        <label for=""><input type="radio" name="radio">Weight:Heavy-Light</label>
+                        <label for=""><input type="radio" name="radio">Weight:Light-Heavy</label>
+                        <hr>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
