@@ -1,0 +1,17 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.utility{
+    background-color: #F4F5F8;
+    height: 30px;
+}
+.outnav{
+    height: 60px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
