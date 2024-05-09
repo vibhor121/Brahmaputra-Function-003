@@ -13,6 +13,37 @@
             transform: scale(1.07);
             transition: 0.6s;
         }
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .scroll-bg{
+           background: aliceblue; 
+           width: 400px;
+           height: auto;
+        }
+        .scroll-div{
+            width: 400px;
+            background: aliceblue;
+            height: 690px;
+            overflow: hidden;
+            overflow-y: scroll;
+            
+        }
+        .scroll-object>p{
+            color: black;
+
+        }
+        label{
+            display: block;
+        }
+        .content{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     </style>
 </head>
 
@@ -64,6 +95,30 @@
 
     </div>
     <!-- END OF NAV -->
+
+
+    <div class="scroll-bg">
+        <div class="scroll-div">
+            <div class="scroll-object">
+                <form action="" method="post">
+                    <div class="content">
+
+                        <label >Sort</label>
+                        <label for=""><input type="radio" name="radio">Newest</label>
+                        <label for=""><input type="radio" name="radio">Price:High-Low</label>
+                        <label for=""><input type="radio" name="radio">Price:Low-High
+                        </label>
+                        <label for=""><input type="radio" name="radio">Weight:Heavy-Light</label>
+                        <label for=""><input type="radio" name="radio">Weight:Light-Heavy</label>
+                        <hr>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
     
 
     <main>
@@ -100,5 +155,6 @@
     
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
