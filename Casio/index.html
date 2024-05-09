@@ -1,64 +1,196 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-            
         }
-        .scroll-bg{
-           background: aliceblue; 
-           width: 400px;
-           height: auto;
-        }
-        .scroll-div{
-            width: 400px;
-            background: aliceblue;
-            height: 690px;
-            overflow: hidden;
-            overflow-y: scroll;
-            
-        }
-        .scroll-object>p{
-            color: black;
 
+        .scroll-bg {
+            background: white;
+            width: 325px;
+            height: auto;
         }
-        label{
+
+        .scroll-div {
+            width: 325px;
+            background: white;
+            height: 690px;
+            overflow: auto;
+            overflow-y: scroll;
+        }
+
+        .scroll-object>p {
+            color: black;
+        }
+
+        label {
             display: block;
         }
-        .content{
-            padding: 50px;
+
+        .content {
+            padding: 50px 10px 0 50px;
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-size: 9pt;
+        }
+
+        button::after {
+            content: " ";
+            width: 5px;
+            color: black;
+        }
+
+        .card {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .gap-1 {
+            margin: 0;
+            padding: 0;
+            gap: 3rem !important;
+        }
+
+        .content span {
+            margin-left: 10px;
+        }
+
+        .gap-1>.btn {
+            color: black;
+            background-color: white;
+            border: none;
+            padding: 0;
+            margin: 0;
+            font-size: 9pt;
+            font-weight: bold;
+        }
+
+        .btn>span {
+            margin-left: 150px;
+        }
+
+        .sort {
+            font-weight: bold;
+        }
+
+        .card>label {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .span-inside{
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        hr{
+            margin: 0;
         }
     </style>
 </head>
+
 <body>
     <div class="scroll-bg">
         <div class="scroll-div">
             <div class="scroll-object">
                 <form action="" method="post">
                     <div class="content">
+                        <label class="sort">Sort</label>
+                        <label for=""><input type="radio" name="radio" /><span>Newest</span></label>
+                        <label for=""><input type="radio" name="radio" /><span>Price:High-Low</span></label>
+                        <label for=""><input type="radio" name="radio" /><span>Price:Low-High</span></label>
+                        <label for=""><input type="radio" name="radio" /><span>Weight:Heavy-Light</span></label>
+                        <label for=""><input type="radio" name="radio" /><span>Weight:Light-Heavy</span></label>
+                        <hr />
 
-                        <label >Sort</label>
-                        <label for=""><input type="radio" name="radio">Newest</label>
-                        <label for=""><input type="radio" name="radio">Price:High-Low</label>
-                        <label for=""><input type="radio" name="radio">Price:Low-High
-                        </label>
-                        <label for=""><input type="radio" name="radio">Weight:Heavy-Light</label>
-                        <label for=""><input type="radio" name="radio">Weight:Light-Heavy</label>
-                        <hr>
+                        <p class="d-inline-flex gap-1">
+                            <button class="btn " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                price range
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="30px" fill="#bl">
+                                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </p>
+                        <div class="collapse show" id="collapseExample">
+                            <div class="card card-body">
+                                <label for="">
+                                    <div class="span-inside">
+                                        <input type="checkbox" name="radio" />
+
+                                        <span>Below ₹5000
+                                        </span>
+                                    </div>
+                                    <span>0</span>
+                                </label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>₹5000 - ₹10000
+                                    </span>
+                                </div>
+                                    <span>252</span></label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>₹10000 - ₹20000
+                                    </span>
+                                </div>
+                                    <span>270</span></label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>₹20000 - ₹30000
+                                    </span>
+                                </div>
+                                    <span>55</span></label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>₹30000 - ₹40000
+                                    </span>
+                                </div>
+                                    <span>34</span></label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>₹40000 - ₹50000
+                                    </span>
+                                </div>
+                                    <span>17</span></label>
+                                <label for=""><div class="span-inside">
+                                    <input type="checkbox" name="radio" />
+
+                                    <span>Above ₹50000
+                                    </span>
+                                </div>
+                                    <span>33</span></label>
+                            </div>
+                        </div>
+                        <hr />
+                        
+
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>
