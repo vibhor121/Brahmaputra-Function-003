@@ -1,196 +1,783 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
 
-        .scroll-bg {
-            background: white;
-            width: 325px;
-            height: auto;
-        }
+         /* menu filtering  css start    */
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        .scroll-div {
-            width: 325px;
-            background: white;
-            height: 690px;
-            overflow: auto;
-            overflow-y: scroll;
-        }
+      .con {
+        max-width: 1500px;
+        margin: auto;
+      }
 
-        .scroll-object>p {
-            color: black;
-        }
+      .scroll-bg {
+        background: white;
+        width: 325px;
+        height: auto;
+      }
 
-        label {
-            display: block;
-        }
+      .scroll-div {
+        width: 325px;
+        background: white;
+        height: 690px;
+        overflow: auto;
+        overflow-y: scroll;
+      }
 
-        .content {
-            padding: 50px 10px 0 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            font-size: 9pt;
-        }
+      .scroll-object > p {
+        color: black;
+      }
 
-        button::after {
-            content: " ";
-            width: 5px;
-            color: black;
-        }
+      label {
+        display: block;
+      }
 
-        .card {
-            border: none;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 0;
-        }
+      .content {
+        padding: 50px 10px 0 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 9pt;
+      }
 
-        .gap-1 {
-            margin: 0;
-            padding: 0;
-            gap: 3rem !important;
-        }
+      button::after {
+        content: " ";
+        width: 5px;
+        color: black;
+      }
 
-        .content span {
-            margin-left: 10px;
-        }
+      .card {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+      }
 
-        .gap-1>.btn {
-            color: black;
-            background-color: white;
-            border: none;
-            padding: 0;
-            margin: 0;
-            font-size: 9pt;
-            font-weight: bold;
-        }
+      .gap-1 {
+        margin: 0;
+        padding: 0;
+        gap: 3rem !important;
+      }
 
-        .btn>span {
-            margin-left: 150px;
-        }
+      .content .vertical {
+        margin-left: 150px;
+      }
 
-        .sort {
-            font-weight: bold;
-        }
+      .gap-1 > .btn {
+        color: black;
+        background-color: white;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: 9pt;
+        font-weight: bold;
+      }
 
-        .card>label {
-            display: flex;
-            justify-content: space-between;
+      .btn > span {
+        margin-left: 140px;
+      }
 
-        }
-        .span-inside{
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-        hr{
-            margin: 0;
-        }
+      .btn > .time {
+        margin-left: 110px;
+      }
+
+      .btn > .water {
+        margin-left: 65px;
+      }
+
+      .btn > .char {
+        margin-left: 125px;
+      }
+
+      .btn > .sen {
+        margin-left: 125px;
+      }
+
+      .btn > .ser {
+        margin-left: 175px;
+      }
+
+      .btn > .fun {
+        margin-left: 155px;
+      }
+
+      .sort {
+        font-weight: bold;
+      }
+
+      .card > label {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .span-inside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .horizontal {
+        margin: 0;
+      }
+
+      .show > .card-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .card-body > .digital-btn {
+        padding: 6.5px 12px;
+        width: max-content;
+        margin-bottom: 10px;
+        border: none;
+      }
+
+      .card-body > .digital-btn:focus {
+        border: 2px solid;
+      }
+
+      .colors-wrap {
+        border: 1px solid gray;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .wrap-1 {
+        display: inline-block;
+        height: 43px;
+        width: 43px;
+
+        margin: 4px;
+        background-color: black;
+      }
+
+      .card-btn .wrap-1:nth-of-type() {
+        background-color: red;
+      }
+
+      .back-color {
+        text-align: center;
+        color: gray;
+      }
+
+      .colors-wrap:focus {
+        border: 2px solid black;
+      }
+
+      .colors-wrap > .c-2 {
+        background-color: skyblue;
+      }
+
+      .colors-wrap > .c-3 {
+        background-color: green;
+      }
+
+      .colors-wrap > .c-4 {
+        background-color: red;
+      }
+
+      .colors-wrap > .c-5 {
+        background-color: beige;
+      }
+
+      .colors-wrap > .c-6 {
+        background-color: purple;
+      }
+
+      .colors-wrap > .c-7 {
+        background-color: white;
+      }
+
+      .colors-wrap > .c-8 {
+        background-color: gray;
+      }
+
+      .colors-wrap > .c-9 {
+        background-color: yellow;
+      }
+
+      .colors-wrap > .c-10 {
+        background-color: orange;
+      }
+
+      .colors-wrap > .c-11 {
+        background-color: pink;
+      }
+
+      .colors-wrap > .c-12 {
+        background-color: whitesmoke;
+      }
+
+      .colors-wrap > .c-13 {
+        background-color: silver;
+      }
+
+      .colors-wrap > .c-14 {
+        background-color: gold;
+      }
+
+      .foot-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .foot-btn-1 {
+        padding: 7.5px 53px;
+        border: 0.5px solid gray;
+      }
+
+      .foot-btn-1:focus {
+        border: 2px solid black;
+      }
+
+      /* menu filtering  css end  */
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="scroll-bg">
+  <body>
+
+    <!-- menu filtering start   -->
+    <div class="con">
+      <div class="scroll-bg">
         <div class="scroll-div">
-            <div class="scroll-object">
-                <form action="" method="post">
-                    <div class="content">
-                        <label class="sort">Sort</label>
-                        <label for=""><input type="radio" name="radio" /><span>Newest</span></label>
-                        <label for=""><input type="radio" name="radio" /><span>Price:High-Low</span></label>
-                        <label for=""><input type="radio" name="radio" /><span>Price:Low-High</span></label>
-                        <label for=""><input type="radio" name="radio" /><span>Weight:Heavy-Light</span></label>
-                        <label for=""><input type="radio" name="radio" /><span>Weight:Light-Heavy</span></label>
-                        <hr />
+          <div class="scroll-object">
+            <form action="" method="post">
+              <div class="content">
+                <label class="sort">Sort</label>
+                <label for=""
+                  ><input type="radio" name="radio" /><span>Newest</span></label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" /><span
+                    >Price:High-Low</span
+                  ></label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" /><span
+                    >Price:Low-High</span
+                  ></label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" /><span
+                    >Weight:Heavy-Light</span
+                  ></label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" /><span
+                    >Weight:Light-Heavy</span
+                  ></label
+                >
+                <hr class="horizontal" />
 
-                        <p class="d-inline-flex gap-1">
-                            <button class="btn " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                price range
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
-                                        width="30px" fill="#bl">
-                                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </p>
-                        <div class="collapse show" id="collapseExample">
-                            <div class="card card-body">
-                                <label for="">
-                                    <div class="span-inside">
-                                        <input type="checkbox" name="radio" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    price range
+                    <span class="vertical">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample">
+                  <div class="card card-body">
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                        <span>Below ₹5000
-                                        </span>
-                                    </div>
-                                    <span>0</span>
-                                </label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>Below ₹5000 </span>
+                      </div>
+                      <span>0</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>₹5000 - ₹10000
-                                    </span>
-                                </div>
-                                    <span>252</span></label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>₹5000 - ₹10000 </span>
+                      </div>
+                      <span>252</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>₹10000 - ₹20000
-                                    </span>
-                                </div>
-                                    <span>270</span></label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>₹10000 - ₹20000 </span>
+                      </div>
+                      <span>270</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>₹20000 - ₹30000
-                                    </span>
-                                </div>
-                                    <span>55</span></label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>₹20000 - ₹30000 </span>
+                      </div>
+                      <span>55</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>₹30000 - ₹40000
-                                    </span>
-                                </div>
-                                    <span>34</span></label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>₹30000 - ₹40000 </span>
+                      </div>
+                      <span>34</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>₹40000 - ₹50000
-                                    </span>
-                                </div>
-                                    <span>17</span></label>
-                                <label for=""><div class="span-inside">
-                                    <input type="checkbox" name="radio" />
+                        <span>₹40000 - ₹50000 </span>
+                      </div>
+                      <span>17</span>
+                    </label>
+                    <label for="">
+                      <div class="span-inside">
+                        <input type="checkbox" name="radio" />
 
-                                    <span>Above ₹50000
-                                    </span>
-                                </div>
-                                    <span>33</span></label>
-                            </div>
-                        </div>
-                        <hr />
-                        
-
+                        <span>Above ₹50000 </span>
+                      </div>
+                      <span>33</span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn type-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-1"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-1"
+                  >
+                    Display type
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-1">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">Digital</button>
+                    <button class="digital-btn" type="button">Analog</button>
+                    <button class="digital-btn" type="button">
+                      Digital and analog
+                    </button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-2"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-2"
+                  >
+                    Functions
+                    <span class="fun">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-2">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">
+                      Solar charger
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Water resistance
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Smartphone Link
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Tide graph
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Hand home position correction
+                    </button>
+                    <button class="digital-btn" type="button">Moon data</button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-3"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-3"
+                  >
+                    Bezel color
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-3">
+                  <div class="card card-body card-btn">
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1"></span>
+                      </div>
+                      <span class="black">Black</span>
                     </div>
-                </form>
-            </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-2"></span>
+                      </div>
+                      <span class="black">Blue</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-3"></span>
+                      </div>
+                      <span class="black">Green</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-4"></span>
+                      </div>
+                      <span class="black">Red</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-5"></span>
+                      </div>
+                      <span class="black">Beige</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-6"></span>
+                      </div>
+                      <span class="black">Purple</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-7"></span>
+                      </div>
+                      <span class="black">White</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-8"></span>
+                      </div>
+                      <span class="black">Gray </span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-9"></span>
+                      </div>
+                      <span class="black">Yellow</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-10"></span>
+                      </div>
+                      <span class="black">Orange</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-11"></span>
+                      </div>
+                      <span class="black">Pink</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-12"></span>
+                      </div>
+                      <span class="black">Skeleton</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-13"></span>
+                      </div>
+                      <span class="black">Silver</span>
+                    </div>
+                    <div class="back-color">
+                      <div class="colors-wrap" tabindex="-1">
+                        <span class="wrap-1 c-14"></span>
+                      </div>
+                      <span class="black">Gold</span>
+                    </div>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-4"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-4"
+                  >
+                    Series
+                    <span class="ser">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-4">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">MT-G</button>
+                    <button class="digital-btn" type="button">
+                      FULL METAL
+                    </button>
+                    <button class="digital-btn" type="button">G-STEEL</button>
+                    <button class="digital-btn" type="button">G-SQUAD</button>
+                    <button class="digital-btn" type="button">
+                      MASTER OF G
+                    </button>
+                    <button class="digital-btn" type="button">
+                      5600 SERIES
+                    </button>
+                    <button class="digital-btn" type="button">
+                      2100 SERIES
+                    </button>
+                    <button class="digital-btn" type="button">
+                      110 SERIES
+                    </button>
+                    <button class="digital-btn" type="button">
+                      6900 SERIES
+                    </button>
+                    <button class="digital-btn" type="button">G-LIDE</button>
+                    <button class="digital-btn" type="button">
+                      LIMITED EDITION
+                    </button>
+                    <button class="digital-btn" type="button">
+                      G-SHOCK WOMEN
+                    </button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-5"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-5"
+                  >
+                    Time adjustment
+                    <span class="time">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-5">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">
+                      GPS satellite radio reception
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Standard radio reception
+                    </button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-6"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-6"
+                  >
+                    Sensor feature
+                    <span class="sen">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-6">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">Direction</button>
+                    <button class="digital-btn" type="button">Altitude</button>
+                    <button class="digital-btn" type="button">
+                      Barometric pressure
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Temperature
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Water depth
+                    </button>
+                    <button class="digital-btn" type="button">Humidity</button>
+                    <button class="digital-btn" type="button">
+                      Number of steps
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Acceleration (number of steps/travel distance)
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Heart rate
+                    </button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-7"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-7"
+                  >
+                    Characteristics
+                    <span class="char">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-7">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">
+                      Carbon materials
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Collaboration model
+                    </button>
+                  </div>
+                </div>
+                <hr class="horizontal" />
+                <p class="d-inline-flex gap-1">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample-8"
+                    aria-expanded="false"
+                    aria-controls="collapseExample-8"
+                  >
+                    Water resistance function
+                    <span class="water">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#bl"
+                      >
+                        <path d="M220-454.87v-50.26h520v50.26H220Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </p>
+                <div class="collapse show" id="collapseExample-8">
+                  <div class="card card-body card-btn">
+                    <button class="digital-btn" type="button">
+                      Water resistance for ISO 200m submersion
+                    </button>
+                    <button class="digital-btn" type="button">
+                      Water resistance up to 20 bar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="foot-btn">
+          <button class="foot-btn-1">clear</button>
+        </div>
+      </div>
     </div>
-</body>
 
+    <!-- menu filtering end -->
+  </body>
 </html>
