@@ -15,3 +15,40 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+/* styles for watch cards */
+main {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.target {
+    display: flex;
+}
+.content0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 10px;
+    
+}
+.card-body1{
+    font-size: 15px;
+
+}
+
+.tranform-on-hover:hover {
+    transform: scale(1.07);
+    transition: 0.6s;
+}
+.border-on-hover:hover{
+    border: 1px solid black !important;
+    transition: border 0.3s ease;
+}
+
+.watch-background {
+    background-color: #f7f8fa;
+}
+
+/* end of styles for watch cards */

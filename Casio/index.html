@@ -16,51 +16,37 @@
     <link rel="stylesheet" href="style.css">
     <title>G-SHOCK|CASIO INDIA</title>
     <style>
-        main {
-        font-family: "Noto Sans JP", sans-serif;
-    }
-
-    .tranform-on-hover:hover {
-        transform: scale(1.07);
-        transition: 0.6s;
-    }
-
-    .watch-background {
-        background-color: #f7f8fa;
-    }
-    /* .hover-on-card:hover{
-        border: 2px solid black;
-    } */
-        .tranform-on-hover:hover {
-            transform: scale(1.07);
-            transition: 0.6s;
-        }
-        *{
+        * {
             margin: 0;
             padding: 0;
-            
+
         }
-        .scroll-bg{
-           background: aliceblue; 
-           width: 400px;
-           height: auto;
+
+        .scroll-bg {
+            background: aliceblue;
+            width: 400px;
+            height: auto;
         }
-        .scroll-div{
+
+        .scroll-div {
             width: 400px;
             background: aliceblue;
             height: 690px;
             overflow: hidden;
             overflow-y: scroll;
-            
+
         }
-        .scroll-object>p{
+
+        .scroll-object>p {
             color: black;
 
         }
-        label{
+
+        label {
             display: block;
         }
-        .content{
+
+        .content {
             padding: 50px;
             display: flex;
             flex-direction: column;
@@ -112,20 +98,20 @@
         }
 
 
-       
+
         .dropdown,
         hr {
             display: none;
         }
 
-        
 
-       
 
-      
+
+
+
         @media screen and (max-width: 767px) {
 
-         
+
             #container-fluid>div:nth-child(1) {
                 display: none;
             }
@@ -152,7 +138,7 @@
                 display: none;
             }
 
-          
+
 
             .social {
                 padding: 10px;
@@ -173,13 +159,12 @@
             text-decoration: none;
             color: white;
         }
-
     </style>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -193,33 +178,33 @@
         <a class="text-black me-5" href="https://world.casio.com/">Corporate</a>
     </div>
 
-    <div class="bg-black  outnav d-flex justify-content-around" >
-        <img src="logo.png" alt="Casio"  >
+    <div class="bg-black  outnav d-flex justify-content-around">
+        <img src="logo.png" alt="Casio">
         <div>
 
             <div class="dropdown">
                 <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                    Dropdown link
                 </a>
-              
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
 
-              <div class="dropdown text-white">
-                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Watches
-                </a>
-              
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </div>
+            </div>
+
+            <div class="dropdown text-white">
+                <a class="btn " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Watches
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
 
             <a href="">Watches</a>
             <a href="">Electronic Musical Instruments</a>
@@ -233,35 +218,32 @@
     </div>
     <!-- END OF NAV -->
 
-
-    <div class="scroll-bg">
-        <div class="scroll-div">
-            <div class="scroll-object">
-                <form action="" method="post">
-                    <div class="content">
-
-                        <label >Sort</label>
-                        <label for=""><input type="radio" name="radio">Newest</label>
-                        <label for=""><input type="radio" name="radio">Price:High-Low</label>
-                        <label for=""><input type="radio" name="radio">Price:Low-High
-                        </label>
-                        <label for=""><input type="radio" name="radio">Weight:Heavy-Light</label>
-                        <label for=""><input type="radio" name="radio">Weight:Light-Heavy</label>
-                        <hr>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-
-    
-
+    <!-- watch card section -->
     <main>
-        <div class="container">
-            <div class="row justify-content-md-end gap-3">
-                <div class="card border-light mb-3 p-0" style="width: 18rem; height: 55vh;">
+        <div class="target">
+            <div class="filter-section">
+                <div class="scroll-bg">
+                    <div class="scroll-div">
+                        <div class="scroll-object">
+                            <form action="" method="post">
+                                <div class="content">
+
+                                    <label>Sort</label>
+                                    <label for=""><input type="radio" name="radio">Newest</label>
+                                    <label for=""><input type="radio" name="radio">Price:High-Low</label>
+                                    <label for=""><input type="radio" name="radio">Price:Low-High
+                                    </label>
+                                    <label for=""><input type="radio" name="radio">Weight:Heavy-Light</label>
+                                    <label for=""><input type="radio" name="radio">Weight:Light-Heavy</label>
+                                    <hr>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content0">
+                <div class="card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
                     <img class="tranform-on-hover"
                         src="https://www.casio.com/content/casio/locales/in/en/products/watches/gshock/_jcr_content/root/responsivegrid/container/product_panel_list_f/content_panel_202211041126293110/image.casiocoreimg.jpeg/1689744233938/dw-5600bb-1-seq5.jpeg"
                         class="card-img-top" alt="...">
@@ -269,7 +251,7 @@
                         <p class="card-title">BEST SELLERS</p>
                     </div>
                 </div>
-                <div class="card border-light mb-3 p-0" style="width: 18rem; height: 55vh;">
+                <div class="card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
                     <img class="tranform-on-hover"
                         src="https://www.casio.com/content/casio/locales/in/en/products/watches/gshock/_jcr_content/root/responsivegrid/container/product_panel_list_f/content_panel_202212211235073281/image.casiocoreimg.png/1689744244043/g-5600ue-1-04.png"
                         class="card-img-top" alt="...">
@@ -277,7 +259,7 @@
                         <p class="card-title">5600 Series</p>
                     </div>
                 </div>
-                <div class="card border-light mb-3 p-0" style="width: 18rem; height: 55vh;">
+                <div class="card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
                     <img class="tranform-on-hover"
                         src="https://www.casio.com/content/casio/locales/in/en/products/watches/gshock/_jcr_content/root/responsivegrid/container/product_panel_list_f/content_panel_202302141951216142/image.casiocoreimg.jpeg/1708506948743/gm-2100g-1a9-004.jpeg"
                         class="card-img-top" alt="...">
@@ -285,7 +267,7 @@
                         <p class="card-title">2100 Series</p>
                     </div>
                 </div>
-                <div  class="card border-light mb-3 p-0" style="width: 18rem; height: 55vh;">
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
                     <div class="watch-background ">
                         <div class="d-flex justify-content-between p-2">
                             <p class="">NEW</p>
@@ -296,20 +278,372 @@
                             </div>
                         </div>
                         <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/GMW/gmw-b5000d-2/assets/GMW-B5000D-2.png.transform/product-panel/image.png"
-                        class=" mx-auto d-block" alt="..." width="210px">
+                            class=" mx-auto d-block" alt="..." width="210px">
                     </div>
                     <div class="card-body">
                         <p class="card-title">G-SHOCK</p>
                         <h6>GMW-B5000D-2</h6>
                     </div>
-                    <div class="card-body p-0 ms-3">
+                    <div class="card-body1 p-0 ms-3">
                         <sub>MRP</sub>
                         <p>₹ 35,995 (incl. of all taxes)</p>
                     </div>
                 </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/gmb/gm-b2100ad-2a/assets/GM-B2100AD-2A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GMW-X5000D-9</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 42,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA1/ga-110mf-1a/assets/GA-110MF-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GA-110MF-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 9,295 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/GMA/gma-p2100sg-2a/assets/GMA-P2100SG-2A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GA-B2100MF-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 11,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/GMA/gma-p2100sg-1a/assets/GMA-P2100SG-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GMA-P2100SG-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 8,495 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/gab/ga-b2100mf-1a/assets/GA-B2100MF-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GMA-P2100SG-2A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 8,495 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/GMA/gma-p2100sg-4a/assets/GMA-P2100SG-4A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GMA-P2100SG-4A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 8,495 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA7/ga-700mf-1a/assets/GA-700MF-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GA-700MF-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 6,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA2/ga-2300-1a/assets/GA-2300-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6> GA-2300-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 8,995 (incl. of all taxes)</p>
+                    </div>
+                </div> 
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA2/ga-2300-7a/assets/GA-2300-7A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6> GA-2300-7A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 8,995 (incl. of all taxes)</p>
+                    </div>
+                </div> 
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/G5/G56/g-5600bg-1/assets/G-5600BG-1.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>G-5600BG-1</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 9,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GD/gdb/gd-b500s-8/assets/GD-B500S-8.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GD-B500S-8</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 9,495 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/dwh/dw-h5600-1a2/assets/DW-H5600-1A2.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>DW-H5600-1A2</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 29,995(incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/dwh/dw-h5600-7/assets/DW-H5600-7.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>DW-H5600MB-8</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 29,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/dwh/dw-h5600-1a2/assets/DW-H5600-1A2.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>DW-H5600-7</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 27,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/D/DW/dwh/dw-h5600mb-8/assets/DW-H5600MB-8.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>GM-110GC-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 19,995 (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <div class="border-on-hover card border-light mb-3 p-0" style="width: 16rem; height: 410px;">
+                    <div class="watch-background ">
+                        <div class="d-flex justify-content-between p-2">
+                            <p class="">NEW</p>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </div>
+                        </div>
+                        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GM/GM1/gm-110gc-1a/assets/GM-110GC-1A.png.transform/product-panel/image.png"
+                            class=" mx-auto d-block" alt="..." width="210px">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">G-SHOCK</p>
+                        <h6>HM-1900GC-1A</h6>
+                    </div>
+                    <div class="card-body1 p-0 ms-3">
+                        <sub>MRP</sub>
+                        <p>₹ 19,495 (incl. of all taxes)</p>
+                    </div>
+                </div> 
             </div>
-        </div>
 
+        </div>
     </main>
 
 
@@ -413,9 +747,10 @@
             </div>
         </div>
     </footer>
-    
+
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
