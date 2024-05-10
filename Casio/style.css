@@ -1,17 +1,79 @@
+/* navbar start */
+
 body{
     width: 100vw;
     height: 100vh;
+  
+    
+}
+.line {
+    border-bottom: 2px solid rgb(198, 197, 197);
+    margin-top: 3px;
+    width: 100%;
 }
 .utility{
+    width: 100%;
     background-color: #F4F5F8;
     height: 30px;
 }
 .outnav{
     height: 60px;
+    width: 100%;
+    margin: 10px;
 }
-a{
+.navimg{
+    width: 100%;
+}
+.ainnav{
     text-decoration: none;
+    color: white;
 }
-a:hover{
+.ainnav:hover{
     text-decoration: underline;
 }
+.midout{
+    gap: 2vw;
+}
+.midout2{
+    gap: 1vw;
+}
+.logocasio{
+    height: 60px;
+}
+.searchbox{
+    background-color: black;
+    border: black 0px solid;
+    border-bottom: white 1px solid;
+    margin: 0px;
+}
+.searchbox:focus{
+    outline: none;
+    cursor: default;
+}
+.searchbtn{
+    border: black 0px solid;
+    background-color: black; 
+    color: white; 
+    border-bottom: white 1px solid;
+    margin: 0px;
+}
+
+.ainnav2{
+    color: black;
+    text-decoration: none;
+}
+.outercontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    top: 0px;
+}
+.sett{
+    width: 1600px;
+}
+
+
+/* navbar-end */
