@@ -30,7 +30,7 @@ body{
 .outnav{
     height: 60px;
     width: 100%;
-    margin: 10px;
+    
 }
 .navimg{
     width: 100%;
@@ -84,6 +84,7 @@ body{
     top: 0px;
 }
 .sett{
+  position: relative;
     width: 1600px;
 }
 
@@ -244,10 +245,13 @@ hr {
 }
 
 .content0 {
+    
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     font-family: "Noto Sans JP", sans-serif;
+    position: relative;
+    z-index: -1
 }
 
 .card{
@@ -286,14 +290,17 @@ hr {
             max-width: 25%;
             margin: 30px;
             display: inline-block;
-            position: sticky;
-            top: 70px;
+            /* position: sticky;
+            top: 70px; */
             font-family: "Noto Sans JP", sans-serif;
           }
           .scroll-bg {
             background: white;
             width: 325px;
             height: auto;
+            position: sticky;
+            top: 70px;
+
           }
     
           .scroll-div {
@@ -302,6 +309,8 @@ hr {
             height: 690px;
             overflow: auto;
             overflow-y: scroll;
+            position: sticky;
+            top: 70px;
           }
     
           .scroll-object > p {
@@ -380,7 +389,7 @@ hr {
           }
     
           .btn > .fun {
-            margin-left: 155px;
+            margin-left: 145px;
           }
     
           .sort {
@@ -521,5 +530,8 @@ hr {
           /* menu filtering  css end  */
 
 
-
+    .main-menu-card{
+      display: flex;
+      position: relative;
+    }
           
