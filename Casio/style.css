@@ -77,6 +77,7 @@ body{
 .outercontainer{
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
@@ -100,8 +101,7 @@ body{
     justify-content: center;
     height: auto;
     margin: 30px;
-    width: 100%;
-    max-width: 1600px;
+    width: 1600px;
     margin: auto;
 }
 #medvv{
@@ -235,20 +235,20 @@ hr {
 /* footer end*/
 /* middle */
 
-.middle{
-  font-family: "Noto Sans JP", sans-serif;
-  width: 100%;
-  display: flex;
-}
 
 
 /* styles for watch cards */
-
+.watch-card-out{
+  display: inline-block;
+  width: 75%;
+  position: sticky;
+}
 
 .content0 {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .card{
@@ -284,12 +284,13 @@ hr {
           }
     
           .con {
-            max-width: 30%;
+            max-width: 25%;
             margin: 30px;
+            display: inline-block;
             position: sticky;
-          top: 70px;
+            top: 70px;
+            font-family: "Noto Sans JP", sans-serif;
           }
-    
           .scroll-bg {
             background: white;
             width: 325px;
