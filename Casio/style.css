@@ -318,8 +318,7 @@ hr {
             flex-direction: column;
             gap: 20px;
             font-size: 9pt;
-            position: sticky;
-            top: 70px;
+            
           }
     
           button::after {
