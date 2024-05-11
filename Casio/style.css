@@ -231,246 +231,6 @@ hr {
 /* footer end*/
 
 
-/* starting of card section */
-a:hover{
-    text-decoration: underline;
-}
-* {
-        margin: 0;
-        padding: 0;
-      }
-
-      .con {
-        max-width: 1500px;
-        margin: auto;
-      }
-
-      .scroll-bg {
-        background: white;
-        width: 325px;
-        height: auto;
-      }
-
-      .scroll-div {
-        width: 325px;
-        background: white;
-        height: 690px;
-        overflow: auto;
-        overflow-y: scroll;
-      }
-
-      .scroll-object > p {
-        color: black;
-      }
-
-      label {
-        display: block;
-      }
-
-      .content {
-        padding: 50px 10px 0 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-size: 9pt;
-      }
-
-      button::after {
-        content: " ";
-        width: 5px;
-        color: black;
-      }
-
-      .card-item-1{
-        border: none;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0;
-      }
-
-      .gap-1 {
-        margin: 0;
-        padding: 0;
-        gap: 3rem !important;
-      }
-
-      .content .vertical {
-        margin-left: 150px;
-      }
-
-      .gap-1 > .btn {
-        color: black;
-        background-color: white;
-        border: none;
-        padding: 0;
-        margin: 0;
-        font-size: 9pt;
-        font-weight: bold;
-      }
-
-      .btn > span {
-        margin-left: 140px;
-      }
-
-      .btn > .time {
-        margin-left: 110px;
-      }
-
-      .btn > .water {
-        margin-left: 65px;
-      }
-
-      .btn > .char {
-        margin-left: 125px;
-      }
-
-      .btn > .sen {
-        margin-left: 125px;
-      }
-
-      .btn > .ser {
-        margin-left: 175px;
-      }
-
-      .btn > .fun {
-        margin-left: 155px;
-      }
-
-      .sort {
-        font-weight: bold;
-      }
-
-      .card > label {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .span-inside {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .horizontal {
-        margin: 0;
-      }
-
-      .show > .card-btn {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
-      }
-
-      .card-body > .digital-btn {
-        padding: 6.5px 12px;
-        width: max-content;
-        margin-bottom: 10px;
-        border: none;
-      }
-
-      .card-body > .digital-btn:focus {
-        border: 2px solid;
-      }
-
-      .colors-wrap {
-        border: 1px solid gray;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-      }
-
-      .wrap-1 {
-        display: inline-block;
-        height: 43px;
-        width: 43px;
-
-        margin: 4px;
-        background-color: black;
-      }
-
-      .card-btn .wrap-1:nth-of-type() {
-        background-color: red;
-      }
-
-      .back-color {
-        text-align: center;
-        color: gray;
-      }
-
-      .colors-wrap:focus {
-        border: 2px solid black;
-      }
-
-      .colors-wrap > .c-2 {
-        background-color: skyblue;
-      }
-
-      .colors-wrap > .c-3 {
-        background-color: green;
-      }
-
-      .colors-wrap > .c-4 {
-        background-color: red;
-      }
-
-      .colors-wrap > .c-5 {
-        background-color: beige;
-      }
-
-      .colors-wrap > .c-6 {
-        background-color: purple;
-      }
-
-      .colors-wrap > .c-7 {
-        background-color: white;
-      }
-
-      .colors-wrap > .c-8 {
-        background-color: gray;
-      }
-
-      .colors-wrap > .c-9 {
-        background-color: yellow;
-      }
-
-      .colors-wrap > .c-10 {
-        background-color: orange;
-      }
-
-      .colors-wrap > .c-11 {
-        background-color: pink;
-      }
-
-      .colors-wrap > .c-12 {
-        background-color: whitesmoke;
-      }
-
-      .colors-wrap > .c-13 {
-        background-color: silver;
-      }
-
-      .colors-wrap > .c-14 {
-        background-color: gold;
-      }
-
-      .foot-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .foot-btn-1 {
-        padding: 7.5px 53px;
-        border: 0.5px solid gray;
-      }
-
-      .foot-btn-1:focus {
-        border: 2px solid black;
-      }
 
 /* styles for watch cards */
 .total1{
@@ -506,5 +266,247 @@ a:hover{
 }
 
 /* end of styles for watch cards */
+
+
+
+         /* menu filtering  css start    */
+         * {
+            margin: 0;
+            padding: 0;
+          }
+    
+          .con {
+            max-width: 1500px;
+            margin: auto;
+          }
+    
+          .scroll-bg {
+            background: white;
+            width: 325px;
+            height: auto;
+          }
+    
+          .scroll-div {
+            width: 325px;
+            background: white;
+            height: 690px;
+            overflow: auto;
+            overflow-y: scroll;
+          }
+    
+          .scroll-object > p {
+            color: black;
+          }
+    
+          label {
+            display: block;
+          }
+    
+          .content {
+            padding: 50px 10px 0 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 9pt;
+          }
+    
+          button::after {
+            content: " ";
+            width: 5px;
+            color: black;
+          }
+    
+          .card {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+          }
+    
+          .gap-1 {
+            margin: 0;
+            padding: 0;
+            gap: 3rem !important;
+          }
+    
+          .content .vertical {
+            margin-left: 150px;
+          }
+    
+          .gap-1 > .btn {
+            color: black;
+            background-color: white;
+            border: none;
+            padding: 0;
+            margin: 0;
+            font-size: 9pt;
+            font-weight: bold;
+          }
+    
+          .btn > span {
+            margin-left: 140px;
+          }
+    
+          .btn > .time {
+            margin-left: 110px;
+          }
+    
+          .btn > .water {
+            margin-left: 65px;
+          }
+    
+          .btn > .char {
+            margin-left: 125px;
+          }
+    
+          .btn > .sen {
+            margin-left: 125px;
+          }
+    
+          .btn > .ser {
+            margin-left: 175px;
+          }
+    
+          .btn > .fun {
+            margin-left: 155px;
+          }
+    
+          .sort {
+            font-weight: bold;
+          }
+    
+          .card > label {
+            display: flex;
+            justify-content: space-between;
+          }
+    
+          .span-inside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    
+          .horizontal {
+            margin: 0;
+          }
+    
+          .show > .card-btn {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 5px;
+          }
+    
+          .card-body > .digital-btn {
+            padding: 6.5px 12px;
+            width: max-content;
+            margin-bottom: 10px;
+            border: none;
+          }
+    
+          .card-body > .digital-btn:focus {
+            border: 2px solid;
+          }
+    
+          .colors-wrap {
+            border: 1px solid gray;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+    
+          .wrap-1 {
+            display: inline-block;
+            height: 43px;
+            width: 43px;
+    
+            margin: 4px;
+            background-color: black;
+          }
+    
+          .card-btn .wrap-1:nth-of-type() {
+            background-color: red;
+          }
+    
+          .back-color {
+            text-align: center;
+            color: gray;
+          }
+    
+          .colors-wrap:focus {
+            border: 2px solid black;
+          }
+    
+          .colors-wrap > .c-2 {
+            background-color: skyblue;
+          }
+    
+          .colors-wrap > .c-3 {
+            background-color: green;
+          }
+    
+          .colors-wrap > .c-4 {
+            background-color: red;
+          }
+    
+          .colors-wrap > .c-5 {
+            background-color: beige;
+          }
+    
+          .colors-wrap > .c-6 {
+            background-color: purple;
+          }
+    
+          .colors-wrap > .c-7 {
+            background-color: white;
+          }
+    
+          .colors-wrap > .c-8 {
+            background-color: gray;
+          }
+    
+          .colors-wrap > .c-9 {
+            background-color: yellow;
+          }
+    
+          .colors-wrap > .c-10 {
+            background-color: orange;
+          }
+    
+          .colors-wrap > .c-11 {
+            background-color: pink;
+          }
+    
+          .colors-wrap > .c-12 {
+            background-color: whitesmoke;
+          }
+    
+          .colors-wrap > .c-13 {
+            background-color: silver;
+          }
+    
+          .colors-wrap > .c-14 {
+            background-color: gold;
+          }
+    
+          .foot-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    
+          .foot-btn-1 {
+            padding: 7.5px 53px;
+            border: 0.5px solid gray;
+          }
+    
+          .foot-btn-1:focus {
+            border: 2px solid black;
+          }
+    
+          /* menu filtering  css end  */
 
 
