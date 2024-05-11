@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  margin: 0;
+}
+
 section {
   font-family: "Inter", sans-serif;
+  padding-bottom: 80px;
 }
 section .container01 {
   max-width: 1320px;
@@ -25,33 +30,34 @@ footer {
 footer .container02 {
   max-width: 1320px;
   margin: auto;
-  display: grid;
   color: white;
-}
-footer .container02 > div:nth-of-type(1) {
-  display: flex;
-  justify-content: space-around;
 }
 footer .container02 > div:nth-of-type(2) {
   display: flex;
   justify-content: space-around;
+  padding: 60px 0 60px 0;
 }
-footer .container02 > div:nth-of-type(2) > div:nth-of-type(1) {
+footer .container02 > div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(1) {
   max-width: 440px;
 }
-footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) {
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(4) {
   max-width: 330px;
 }
-footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div {
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(4) > div {
   display: flex;
 }
-footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div input {
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(4) > div input {
   padding: 20px 21px 20px 21px;
   border-radius: 10px 0 0 10px;
   width: 300px;
   border: 0px;
 }
-footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div button {
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(4) > div button {
   border: 0px;
   border-radius: 0 10px 10px 0;
   font-size: 14.53px;
@@ -60,14 +66,15 @@ footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div button {
   background-color: white;
   padding-right: 10px;
 }
-footer .container02 > div:nth-of-type(3) {
+footer .container02 > div:nth-of-type(4) {
   display: flex;
   justify-content: space-between;
 }
-footer .container02 > div:nth-of-type(3) > div:nth-of-type(1) {
+footer .container02 > div:nth-of-type(4) > div:nth-of-type(1) {
   padding-left: 40px;
 }
-footer .container02 > div:nth-of-type(3) > div:nth-of-type(2) {
+footer .container02 > div:nth-of-type(4) > div:nth-of-type(2) {
+  display: flex;
   padding-right: 40px;
 }
 

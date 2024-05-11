@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    margin: 0;
+}
 section {
     font-family: "Inter", sans-serif;
+    padding-bottom: 80px;
 
     .container01 {
         max-width: 1320px;
@@ -34,17 +38,18 @@ footer {
     .container02 {
         max-width: 1320px;
         margin: auto;
-        display: grid;
         color: white;
-
-        >div:nth-of-type(1) {
-            display: flex;
-            justify-content: space-around;
-        }
 
         >div:nth-of-type(2) {
             display: flex;
             justify-content: space-around;
+            padding: 60px 0 60px 0;
+        }
+
+        >div:nth-of-type(3) {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 30px;
 
             >div:nth-of-type(1) {
                 max-width: 440px;
@@ -76,7 +81,7 @@ footer {
                 }
             }
         }
-        >div:nth-of-type(3) {
+        >div:nth-of-type(4) {
             display: flex;
             justify-content: space-between;
 
@@ -84,6 +89,7 @@ footer {
                 padding-left: 40px;
             }
             >div:nth-of-type(2){
+                display: flex;
                 padding-right: 40px;
             }
         }
