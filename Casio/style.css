@@ -4,9 +4,12 @@
 
 body{
     width: 100vw;
-    height: 100vh;
-  
-    
+    height: 100vh; 
+}
+.productline{
+  position: sticky;
+  top: 0px; 
+  background-color: #FFFFFF;
 }
 .line {
     border-bottom: 2px solid rgb(198, 197, 197);
@@ -15,6 +18,8 @@ body{
 }
 .lineb {
     margin-bottom: 10px;
+    position: sticky;
+    top: 60px;
 }
 
 .utility{
@@ -71,7 +76,6 @@ body{
 
 .outercontainer{
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,18 +233,22 @@ hr {
     margin-left: 20px;
 }
 /* footer end*/
+/* middle */
 
+.middle{
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+  display: flex;
+}
 
 
 /* styles for watch cards */
-.total1{
-    font-family: "Noto Sans JP", sans-serif;
-    display: flex;
-}
+
 
 .content0 {
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
 }
 
 .card{
@@ -276,8 +284,10 @@ hr {
           }
     
           .con {
-            max-width: 1500px;
-            margin: auto;
+            max-width: 30%;
+            margin: 30px;
+            position: sticky;
+          top: 70px;
           }
     
           .scroll-bg {
@@ -308,6 +318,8 @@ hr {
             flex-direction: column;
             gap: 20px;
             font-size: 9pt;
+            position: sticky;
+            top: 70px;
           }
     
           button::after {
@@ -510,3 +522,5 @@ hr {
           /* menu filtering  css end  */
 
 
+
+          
