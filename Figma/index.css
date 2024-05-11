@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+section {
+  font-family: "Inter", sans-serif;
+}
+section .container01 {
+  max-width: 1320px;
+  margin: auto;
+  text-align: center;
+}
+section .container01 > div:nth-of-type(1) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  color: rgb(5, 7, 60);
+}
+section .container01 > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #110c3b;
+  font-family: "Inter", sans-serif;
+}
+footer .container02 {
+  max-width: 1320px;
+  margin: auto;
+  display: grid;
+  color: white;
+}
+footer .container02 > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-around;
+}
+footer .container02 > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+}
+footer .container02 > div:nth-of-type(2) > div:nth-of-type(1) {
+  max-width: 440px;
+}
+footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) {
+  max-width: 330px;
+}
+footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div {
+  display: flex;
+}
+footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div input {
+  padding: 20px 21px 20px 21px;
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+  border: 0px;
+}
+footer .container02 > div:nth-of-type(2) > div:nth-of-type(4) > div button {
+  border: 0px;
+  border-radius: 0 10px 10px 0;
+  font-size: 14.53px;
+  font-weight: 400;
+  line-height: 28.13px;
+  background-color: white;
+  padding-right: 10px;
+}
+footer .container02 > div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(1) {
+  padding-left: 40px;
+}
+footer .container02 > div:nth-of-type(3) > div:nth-of-type(2) {
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=index.css.map */
