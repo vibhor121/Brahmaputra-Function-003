@@ -53,7 +53,7 @@ To run this project locally:
 
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
-3. Explore the Dmart experience right from your device .
+3. Explore the CASIO experience right from your device .
    
 ## Contributors
 - [Vibhor](https://github.com/vibhor121)
