@@ -250,8 +250,8 @@ hr {
     flex-wrap: wrap;
     width: 100%;
     font-family: "Noto Sans JP", sans-serif;
-    position: relative;
-    z-index: -1
+    /* position: relative;
+    z-index: -1 */
 }
 .black-background{
   height: 120px;
@@ -282,8 +282,8 @@ hr {
 }
 
 
-#tranform-on-hover:hover{
-    transform: scale(1.5);
+.tranform-on-hover:hover{
+    transform: scale(1.07);
     transition: 0.6s;
 }
 .border-on-hover:hover{
