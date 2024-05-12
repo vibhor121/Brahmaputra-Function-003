@@ -10,16 +10,19 @@ body{
   position: sticky;
   top: 0px;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 .line {
     border-bottom: 2px solid rgb(198, 197, 197);
     margin-top: 3px;
     width: 100%;
+    z-index: 1;
 }
 .lineb {
     margin-bottom: 10px;
     position: sticky;
     top: 60px;
+    z-index: 1;
 }
 
 .utility{
