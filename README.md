@@ -2,7 +2,18 @@
 # G-SHOCK|CASIO
 Casio G-Shock is a renowned brand synonymous with durability, innovation, and reliability in the world of timepieces. With a legacy spanning decades, G-Shock watches have earned a reputation for their ruggedness, cutting-edge technology, and stylish designs . Designed to withstand the harshest conditions, G-Shock watches are built to accompany adventurers, athletes, and everyday individuals through their toughest challenges. Whether it's extreme sports, outdoor adventures, or demanding professional environments, G-Shock watches offer unparalleled toughness and resilience.
 
+### Deployed Link
+
+[Live Demo: Dmart](https://casio-india.netlify.app/)
+
+[Live Demo: Viatours](https://viatour.netlify.app/)
+
+### Screenshots
 ![CASIO](https://github.com/vibhor121/Brahmaputra-Function-003/assets/154576489/a75205f8-361a-432a-ae56-2eb9f1c8358e)
+
+![06331a30-6599-48d1-b22b-6a37a092c6b8 (1)](https://github.com/vibhor121/Brahmaputra-Function-003/assets/154576489/f4e49935-a378-4a48-95bc-1c8d5bedf574)
+
+
 
 ## Features
 
@@ -43,6 +54,12 @@ To run this project locally:
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
 3. Explore the Dmart experience right from your device .
+   
+## Contributors
+- [Vibhor](https://github.com/vibhor121)
+- [Rodda Rakesh](https://github.com/RtoRakesh)
+- [Rahul Gupta](https://github.com/Rahul8945)
+- [Shashi Varshneya](https://github.com/whyshashi)
 
 ## License
 
@@ -51,4 +68,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 -Inspired by the need for a modern and user-friendly e-commerce platform.
--Special thanks to the supportive community at [G-SHOCK|CASIO].
+-Special thanks to the supportive community at [G-SHOCK | CASIO].
