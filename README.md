@@ -11,8 +11,7 @@ Casio G-Shock is a renowned brand synonymous with durability, innovation, and re
 ### Screenshots
 ![CASIO](https://github.com/vibhor121/Brahmaputra-Function-003/assets/154576489/a75205f8-361a-432a-ae56-2eb9f1c8358e)
 
-![06331a30-6599-48d1-b22b-6a37a092c6b8 (1)](https://github.com/vibhor121/Brahmaputra-Function-003/assets/154576489/f4e49935-a378-4a48-95bc-1c8d5bedf574)
-
+![Screenshot (336) (1)](https://github.com/vibhor121/Brahmaputra-Function-003/assets/154576489/fe31ca20-940a-4009-9af2-159c3cc2f11c)
 
 
 ## Features
