@@ -4,7 +4,7 @@ Casio G-Shock is a renowned brand synonymous with durability, innovation, and re
 
 ### Deployed Link
 
-[Live Demo: Dmart](https://casio-india.netlify.app/)
+[Live Demo: CASIO](https://casio-india.netlify.app/)
 
 [Live Demo: Viatours](https://viatour.netlify.app/)
 
