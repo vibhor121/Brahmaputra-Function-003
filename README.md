@@ -51,4 +51,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 -Inspired by the need for a modern and user-friendly e-commerce platform.
--Special thanks to the supportive community at [Dmart].
+-Special thanks to the supportive community at [G-SHOCK|CASIO].
